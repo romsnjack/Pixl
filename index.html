@@ -4,15 +4,18 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" href="icon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="style-index.css" rel="stylesheet" type="text/css" />
 		<title>Pixl</title>
 		<style>
 			canvas {
-				border: 1px solid black;
+				border: 10px solid #131519;
 			}
 		</style>
 	</head>
 	<body>
 		<canvas id="canvas" width="500" height="500"></canvas>
+		<input type="color" id="colorPicker" value="#000000" />
+		<button id="saveButton">Save Picture</button>
 
 		<script src="pixel-drawing.js"></script>
 	</body>
