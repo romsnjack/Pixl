@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Common Pixel', sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #30353f;
+}
+
+canvas {
+	background-color: transparent;
+}
+
+#saveButton {
+	background-color: #b4c3ec;
+	color: #30353f;
+	position: fixed;
+	bottom: 207px;
+	left: 580px;
+	width: 110px;
+	height: 30px;
+	border: none;
+	border-radius: 10px;
+	letter-spacing: 0.05em;
+}
+
+#eraseButton {
+	background-color: #b4c3ec;
+	color: #30353f;
+	position: fixed;
+	bottom: 600px;
+	right: 590px;
+	width: 100px;
+	height: 30px;
+	border: none;
+	border-radius: 10px;
+	letter-spacing: 0.05em;
+}
+
+#colorPicker {
+	background-color: #30353f;
+	position: fixed;
+	bottom: 680px;
+	right: 590px;
+	width: 100px;
+	height: 50px;
+	border: none;
+}
+
+.romsn {
+	position: absolute;
+	bottom: 20px;
+	left: 25px;
+	z-index: 100;
+	display: block;
+	color: #b4c3ec;
+	text-decoration: none;
+	letter-spacing: 0.05em;
+}
+
+.github {
+	position: absolute;
+	top: 20px;
+	right: 130px;
+	z-index: 100;
+	display: block;
+	color: #b4c3ec;
+	text-decoration: none;
+	transition-duration: 0.4s;
+	letter-spacing: 0.05em;
+}
+
+.github:hover {
+	color: white;
+	transition-duration: 0.4s;
+	letter-spacing: 0.05em;
+}
+
+.twitter {
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	z-index: 100;
+	display: block;
+	color: #b4c3ec;
+	text-decoration: none;
+	transition-duration: 0.4s;
+	letter-spacing: 0.05em;
+}
+
+.twitter:hover {
+	color: white;
+	transition-duration: 0.4s;
+	letter-spacing: 0.05em;
+}
+
+.symbol {
+	position: absolute;
+	bottom: 20px;
+	right: 25px;
+	z-index: 100;
+	display: block;
+	color: #b4c3ec;
+	text-decoration: none;
+	transition-duration: 0.4s;
+	letter-spacing: 0.05em;
+}
+
+.symbol:hover {
+	color: white;
+	transition-duration: 0.4s;
+	letter-spacing: 0.05em;
+}

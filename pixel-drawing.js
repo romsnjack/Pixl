@@ -10,7 +10,7 @@ let isErasing = false;
 
 canvas.addEventListener('mousedown', startDrawing);
 canvas.addEventListener('mouseup', stopDrawing);
-canvas.addEventListener('mousemove', draw, erase);
+canvas.addEventListener('mousemove', draw);
 
 function startDrawing(e) {
 	if (isErasing) {
