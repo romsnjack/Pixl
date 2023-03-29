@@ -4,7 +4,6 @@ const GRID_SIZE = 10; // Change this to change the size of the grid squares
 const colorPicker = document.querySelector('#colorPicker');
 const saveButton = document.querySelector('#saveButton');
 const eraseButton = document.querySelector('#eraseButton');
-//const fillButton = document.querySelector('#fillButton');
 
 let isDrawing = false;
 let isErasing = false;
