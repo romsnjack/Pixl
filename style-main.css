@@ -17,7 +17,7 @@ canvas {
 	background-color: transparent;
 }
 
-#saveButton {
+#save-button {
 	background-color: #b4c3ec;
 	color: #30353f;
 	position: fixed;
@@ -28,9 +28,15 @@ canvas {
 	border: none;
 	border-radius: 10px;
 	letter-spacing: 0.05em;
+	transition: 0.4s;
 }
 
-#eraseButton {
+#save-button:hover {
+	background-color: white;
+	transition: 0.4s;
+}
+
+#erase-button {
 	background-color: #b4c3ec;
 	color: #30353f;
 	position: fixed;
@@ -41,9 +47,34 @@ canvas {
 	border: none;
 	border-radius: 10px;
 	letter-spacing: 0.05em;
+	transition: 0.4s;
 }
 
-#colorPicker {
+#erase-button:hover {
+	background-color: white;
+	transition: 0.4s;
+}
+
+#clear-button {
+	background-color: #b4c3ec;
+	color: #30353f;
+	position: fixed;
+	bottom: 560px;
+	right: 590px;
+	width: 100px;
+	height: 30px;
+	border: none;
+	border-radius: 10px;
+	letter-spacing: 0.05em;
+	transition: 0.4s;
+}
+
+#clear-button:hover {
+	background-color: white;
+	transition: 0.4s;
+}
+
+#color-picker {
 	background-color: #30353f;
 	position: fixed;
 	bottom: 680px;

@@ -1,9 +1,10 @@
 const canvas = document.querySelector('#canvas');
 const ctx = canvas.getContext('2d');
 const GRID_SIZE = 10; // Change this to change the size of the grid squares
-const colorPicker = document.querySelector('#colorPicker');
-const saveButton = document.querySelector('#saveButton');
-const eraseButton = document.querySelector('#eraseButton');
+const colorPicker = document.querySelector('#color-picker');
+const saveButton = document.querySelector('#save-button');
+const eraseButton = document.querySelector('#erase-button');
+const clearButton = document.querySelector('#clear-button');
 
 let isDrawing = false;
 let isErasing = false;
@@ -49,6 +50,12 @@ function erase(e) {
 	const col = Math.floor(x / GRID_SIZE);
 
 	ctx.clearRect(col * GRID_SIZE, row * GRID_SIZE, GRID_SIZE, GRID_SIZE);
+}
+
+clearButton.addEventListener('click', clearCanvas);
+
+function clearCanvas() {
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
 saveButton.addEventListener('click', savePicture);
