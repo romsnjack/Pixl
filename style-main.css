@@ -169,3 +169,11 @@ body {
 	transition-duration: 0.4s;
 	letter-spacing: 0.05em;
 }
+
+.line {
+	color: white;
+}
+
+#size-value {
+	color: #b4c3ec;
+}
