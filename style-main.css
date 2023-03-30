@@ -177,3 +177,21 @@ body {
 #size-value {
 	color: #b4c3ec;
 }
+
+#price {
+	color: #b4c3ec;
+}
+
+p {
+	color: #b4c3ec;
+	position: absolute;
+	font-size: 12px;
+	top: 45px;
+	left: 25px;
+	z-index: 100;
+	display: block;
+	color: #b4c3ec;
+	text-decoration: none;
+	letter-spacing: 0.05em;
+	cursor: pointer;
+}

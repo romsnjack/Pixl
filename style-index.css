@@ -47,7 +47,7 @@ body {
 	letter-spacing: 0.1em;
 }
 
-.welcome h3 {
+#clock {
 	color: #b4c3ec;
 	font-weight: 300;
 	text-align: center;
@@ -112,4 +112,22 @@ body {
 	color: #b4c3ec;
 	text-decoration: none;
 	letter-spacing: 0.05em;
+}
+
+#price {
+	color: #b4c3ec;
+}
+
+p {
+	color: #b4c3ec;
+	position: absolute;
+	font-size: 12px;
+	top: 45px;
+	left: 25px;
+	z-index: 100;
+	display: block;
+	color: #b4c3ec;
+	text-decoration: none;
+	letter-spacing: 0.05em;
+	cursor: pointer;
 }
