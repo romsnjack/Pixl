@@ -13,6 +13,14 @@ body {
 	background-color: #30353f;
 }
 
+.big-box {
+	position: relative;
+	width: 395px;
+	height: 385px;
+	background-color: #1d1e1f;
+	border-radius: 8px;
+}
+
 .box {
 	position: relative;
 	width: 380px;
@@ -47,7 +55,7 @@ body {
 	letter-spacing: 0.05em;
 }
 
-.login-button {
+#login-button {
 	border: none;
 	outline: none;
 	background-color: white;
@@ -87,6 +95,17 @@ body {
 .romsn {
 	position: absolute;
 	bottom: 20px;
+	left: 25px;
+	z-index: 100;
+	display: block;
+	color: #b4c3ec;
+	text-decoration: none;
+	letter-spacing: 0.05em;
+}
+
+.pixl {
+	position: absolute;
+	top: 20px;
 	left: 25px;
 	z-index: 100;
 	display: block;

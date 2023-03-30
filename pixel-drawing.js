@@ -3,7 +3,6 @@ const ctx = canvas.getContext('2d');
 const GRID_SIZE = 10; // Change this to change the size of the grid squares
 const colorPicker = document.querySelector('#color-picker');
 const saveButton = document.querySelector('#save-button');
-const eraseButton = document.querySelector('#erase-button');
 const clearButton = document.querySelector('#clear-button');
 
 let isDrawing = false;
@@ -33,23 +32,24 @@ function draw(e) {
 	const x = e.offsetX;
 	const y = e.offsetY;
 
-	const row = Math.floor(y / GRID_SIZE);
-	const col = Math.floor(x / GRID_SIZE);
-
-	ctx.fillStyle = colorPicker.value;
-	ctx.fillRect(col * GRID_SIZE, row * GRID_SIZE, GRID_SIZE, GRID_SIZE);
-}
-
-function erase(e) {
-	if (!isErasing) return;
-
-	const x = e.offsetX;
-	const y = e.offsetY;
-
-	const row = Math.floor(y / GRID_SIZE);
-	const col = Math.floor(x / GRID_SIZE);
-
-	ctx.clearRect(col * GRID_SIZE, row * GRID_SIZE, GRID_SIZE, GRID_SIZE);
+	if (e.buttons === 1) {
+		// left mouse button is being held down
+		ctx.fillStyle = colorPicker.value;
+		ctx.fillRect(
+			Math.floor(x / GRID_SIZE) * GRID_SIZE,
+			Math.floor(y / GRID_SIZE) * GRID_SIZE,
+			GRID_SIZE,
+			GRID_SIZE
+		);
+	} else if (e.buttons === 2) {
+		// right mouse button is being held down
+		ctx.clearRect(
+			Math.floor(x / GRID_SIZE) * GRID_SIZE,
+			Math.floor(y / GRID_SIZE) * GRID_SIZE,
+			GRID_SIZE,
+			GRID_SIZE
+		);
+	}
 }
 
 clearButton.addEventListener('click', clearCanvas);
@@ -68,15 +68,4 @@ function savePicture() {
 	document.body.appendChild(link);
 	link.click();
 	document.body.removeChild(link);
-}
-
-eraseButton.addEventListener('click', toggleErase);
-
-function toggleErase() {
-	isErasing = !isErasing;
-	if (isErasing) {
-		eraseButton.classList.add('active');
-	} else {
-		eraseButton.classList.remove('active');
-	}
 }

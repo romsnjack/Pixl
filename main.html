@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" href="icon.png" />
+		<link rel="icon" href=".png/icon.png" />
 		<link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="style-main.css" rel="stylesheet" type="text/css" />
@@ -15,14 +15,30 @@
 	</head>
 	<body>
 		<a class="romsn">romsn</a>
+		<a class="pixl">Pixl 1.0</a>
 		<a class="github" href="https://github.com/romsnjack">github</a>
 		<a class="twitter" href="https://twitter.com/romsnonline">twitter</a>
-		<a class="symbol" href="/index.html">&lt;/&gt;</a>
-		<canvas id="canvas" width="500" height="500"></canvas>
-		<input type="color" id="color-picker" value="#000000" />
-		<button id="save-button">Save Picture</button>
-		<button id="erase-button">Erase</button>
-		<button id="clear-button">Clear Canvas</button>
+		<a class="symbol" href="index.html">&lt;/&gt;</a>
+
+		<div class="container">
+			<div class="canvas-container">
+				<canvas
+					id="canvas"
+					width="500"
+					height="500"
+					oncontextmenu="return false"
+				></canvas>
+				<div class="button-container">
+					<button id="save-button">Save Picture</button>
+					<input type="color" id="color-picker" value="#000000" />
+					<button id="clear-button">Clear Canvas</button>
+				</div>
+			</div>
+			<div class="mouse-container">
+				<img id="left-mouse" src=".png/left_mouse.png" />
+				<img id="right-mouse" src=".png/right_mouse.png" />
+			</div>
+		</div>
 		<script src="pixel-drawing.js"></script>
 	</body>
 </html>

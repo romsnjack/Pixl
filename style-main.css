@@ -13,22 +13,50 @@ body {
 	background-color: #30353f;
 }
 
-canvas {
-	background-color: transparent;
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.canvas-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+.button-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 5px;
+}
+
+.button-container > * {
+	margin: 5px;
+}
+
+.mouse-container {
+	display: flex;
+	width: 100%;
+}
+
+.mouse-container img {
+	max-width: 50%;
 }
 
 #save-button {
 	background-color: #b4c3ec;
 	color: #30353f;
-	position: fixed;
-	bottom: 207px;
-	left: 580px;
+	position: flex;
 	width: 110px;
 	height: 30px;
 	border: none;
 	border-radius: 10px;
 	letter-spacing: 0.05em;
 	transition: 0.4s;
+	cursor: pointer;
 }
 
 #save-button:hover {
@@ -36,37 +64,17 @@ canvas {
 	transition: 0.4s;
 }
 
-#erase-button {
-	background-color: #b4c3ec;
-	color: #30353f;
-	position: fixed;
-	bottom: 600px;
-	right: 590px;
-	width: 100px;
-	height: 30px;
-	border: none;
-	border-radius: 10px;
-	letter-spacing: 0.05em;
-	transition: 0.4s;
-}
-
-#erase-button:hover {
-	background-color: white;
-	transition: 0.4s;
-}
-
 #clear-button {
 	background-color: #b4c3ec;
 	color: #30353f;
-	position: fixed;
-	bottom: 560px;
-	right: 590px;
+	position: flex;
 	width: 100px;
 	height: 30px;
 	border: none;
 	border-radius: 10px;
 	letter-spacing: 0.05em;
 	transition: 0.4s;
+	cursor: pointer;
 }
 
 #clear-button:hover {
@@ -76,17 +84,27 @@ canvas {
 
 #color-picker {
 	background-color: #30353f;
-	position: fixed;
-	bottom: 680px;
-	right: 590px;
+	position: flex;
 	width: 100px;
 	height: 50px;
 	border: none;
+	cursor: pointer;
 }
 
 .romsn {
 	position: absolute;
 	bottom: 20px;
+	left: 25px;
+	z-index: 100;
+	display: block;
+	color: #b4c3ec;
+	text-decoration: none;
+	letter-spacing: 0.05em;
+}
+
+.pixl {
+	position: absolute;
+	top: 20px;
 	left: 25px;
 	z-index: 100;
 	display: block;
@@ -105,6 +123,7 @@ canvas {
 	text-decoration: none;
 	transition-duration: 0.4s;
 	letter-spacing: 0.05em;
+	cursor: pointer;
 }
 
 .github:hover {
@@ -123,6 +142,7 @@ canvas {
 	text-decoration: none;
 	transition-duration: 0.4s;
 	letter-spacing: 0.05em;
+	cursor: pointer;
 }
 
 .twitter:hover {
@@ -141,6 +161,7 @@ canvas {
 	text-decoration: none;
 	transition-duration: 0.4s;
 	letter-spacing: 0.05em;
+	cursor: pointer;
 }
 
 .symbol:hover {
