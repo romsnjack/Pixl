@@ -71,14 +71,10 @@ body {
 	letter-spacing: 0.05em;
 }
 
-.login-button:hover {
+#login-button:hover {
 	background-color: gray;
 	transition-duration: 0.4s;
 	letter-spacing: 0.05em;
-}
-
-.login-button:active {
-	opacity: 0.8;
 }
 
 .symbol {
@@ -100,6 +96,12 @@ body {
 	display: block;
 	color: #b4c3ec;
 	text-decoration: none;
+	letter-spacing: 0.05em;
+}
+
+.romsn:hover {
+	color: white;
+	transition-duration: 0.4s;
 	letter-spacing: 0.05em;
 }
 

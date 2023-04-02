@@ -102,6 +102,12 @@ body {
 	letter-spacing: 0.05em;
 }
 
+.romsn:hover {
+	color: white;
+	transition-duration: 0.4s;
+	letter-spacing: 0.05em;
+}
+
 .pixl {
 	position: absolute;
 	top: 20px;
